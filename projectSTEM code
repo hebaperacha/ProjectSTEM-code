@@ -1,0 +1,15 @@
+n = int(input("How many numbers do you need to check? "))
+odd = 0
+even = 0
+
+for i in range(1,n+1):
+    num = int(input("Enter number: "))
+    if num%2 == 0:
+        print(str(num) + " is an even number.")
+        even = even + 1
+    else:
+        print(str(num)+ " is an odd number.")
+        odd = odd + 1
+
+print("You entered " + str(even) + " even number(s).")
+print("You entered " + str(odd) + " odd number(s).")
